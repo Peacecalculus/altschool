@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+}
+body{
+   max-inline-size: 1000px;
+   margin-inline: auto;
+   font-family: sans-serif;
+}
+header {
+    padding: 10px 20px; 
+  }
+  
+  .main-nav {
+    display: grid;
+    gap: 50%;
+  }
+
+  @media(width >  500px){
+    .main-nav{
+      grid-template-columns: 1fr 1fr;
+    }
+
+  }
+  
+  .logo-container {
+    margin-right: 20px; 
+  }
+  
+  .logo {
+    inline-size: 100px;
+    block-size: auto;
+    padding: 10px;
+  }
+  a{
+    color:black; 
+  }
+  
+  .nav-list {
+    display: flex; 
+    font-weight: bold;
+    list-style-type: none; 
+  }
+    
+  .nav-item {
+    text-decoration: none; 
+    font-weight: 500; 
+    padding: 8px 12px; 
+    margin-left: 20px; 
+    transition: color 0.3s ease; 
+  }
+
+  a:hover, a:focus-visible{
+    color: #4676a9; 
+  }
+
+  h1{
+    text-align: center;
+    font-size: 5rem;
+    padding: 30px;
+  }
+
+  span{
+    color: #4676a9 ;
+  }
+
+  h3{
+    color:#4676a9  ;
+    font-size: 2em;
+    padding: 10px 0;
+  }
+
+  p{
+    margin-block-start: 10px;
+    margin-block-end: 40px;
+    line-height: 1.5;
+  }
+ 
+  h4{
+    color: white;
+    font-size: 1.5rem;
+  }
+
+.text-overlay{
+    inline-size: 45%;
+    block-size: 35%;
+    padding: 55px;
+    margin-block-end: 40px;
+    background-image: url(../images/simple-steps.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    border: 3px solid #4676a9;
+    line-height: 1.5;
+} 
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.climber-bg{
+    inline-size: 45%;
+    font-size: 1rem;
+    margin-left: 5%;
+    
+}
+.climber-bg ol{
+    padding: 20px;
+    margin-inline-start: .9%;
+    line-height: 1.6;
+}
+img{
+    inline-size: 100%;
+}
+footer p{
+    background-color: #4676a9 ;
+    inline-size: initial;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 20px ;
+    margin-block-start: 40px;
+    margin-block-end: 40px;
+    border: 2px solid #113d6c;
+    color: white;
+}

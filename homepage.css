@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-inline-size: 1000px;
+    margin-inline: auto;
+    font-family: sans-serif;
+}
+header{
+    padding:  15px 0; 
+}
+
+.logo-container{
+    margin-inline-start: 10px;
+    margin-block-start: 5px;
+    transform: scale(1);
+}
+
+.main-nav{
+    display: grid;
+    gap: 50%;
+    font-size: 0.9rem;
+}
+
+@media(width > 500px){
+    .main-nav{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.nav-list{
+    display: flex;
+    padding: 10px;
+    list-style-type: none;
+}
+
+span a{
+    color: green;
+}
+
+span a:hover{
+    color: rgb(2, 180, 2);
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover, a:focus-visible{
+    color: #4676a9;
+}
+
+.nav-item{
+    font-weight: 500;
+    margin-left: 20px;
+    transition: color 0.5s ease; 
+}
+
+h1{
+    padding: 30px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+@media (width > 720px) {
+    h1{
+    font-size: 7.5rem;
+}
+}
+span{
+    color: #4676a9;
+}
+.gym{
+    display: inline-block;
+    inline-size: 100%;
+    margin-block-end: 40px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 35px;
+}
+
+.flex-item{
+    inline-size: 70%;
+    line-height: 1.5;
+    margin-right: 50px;
+}
+
+.flex-item p{
+    margin: 15px 0;
+}
+
+img{
+    display: block;
+    inline-size: 40%;
+    block-size: auto;
+}
+h2{
+    color: orange;
+    padding: 10px 0;
+}
+
+p.content{
+    background-color: #4676a9;
+    color: white;
+    padding: 40px;
+    margin-block-end: 40px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.class{
+    margin-left: 70px;
+    line-height: 1.5;
+}
+
+.class p{
+    margin: 10px 0;
+}
+
+h3{
+    font-size: 2rem;
+    color: #4676a9;
+}
+
+.list{
+    margin: 20px 0;
+    margin-left: 30px;
+    line-height: 1.6;
+}
+
+footer p{
+    background-color: #4676a9 ;
+    inline-size: initial;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 20px ;
+    margin-block-start: 40px;
+    margin-block-end: 40px;
+    border: 2px solid #113d6c;
+    color: white;
+}
